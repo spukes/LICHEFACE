@@ -275,7 +275,7 @@ pub fn show(app: &mut LichefaceApp, ctx: &egui::Context) {
                             let cancel_btn = egui::Button::new(
                                 RichText::new("❌  Cancelar Búsqueda").color(Color32::WHITE).size(sz(12.5)).strong()
                             )
-                            .fill(Color32::from_rgb(180, 20, 20))
+                            .fill(Color32::BLACK)
                             .stroke(egui::Stroke::new(1.0_f32, border_color))
                             .rounding(rounding)
                             .min_size(Vec2::new(ui.available_width(), 38.0));
