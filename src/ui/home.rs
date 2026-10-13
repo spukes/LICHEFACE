@@ -314,7 +314,7 @@ pub fn show(app: &mut LichefaceApp, ctx: &egui::Context) {
                             ui.label(RichText::new("🤖").color(accent).size(sz(18.0)).strong());
                             ui.label(RichText::new("Jugar contra Stockfish (IA)").color(text).size(sz(15.0)).strong());
                         });
-                        ui.label(RichText::new("Inicio instantáneo sin esperas • Admite Blitz, Bullet y Rápida").color(text2).size(sz(11.0)));
+                        ui.label(RichText::new("Inicio instantáneo sin esperas • Admite Blitz, y Rápida").color(text2).size(sz(11.0)));
                         ui.add_space(12.0);
 
                         // Difficulty Level
@@ -332,7 +332,6 @@ pub fn show(app: &mut LichefaceApp, ctx: &egui::Context) {
                         ui.label(RichText::new("Ritmo de juego:").color(text).size(sz(12.0)).strong());
                         ui.add_space(6.0);
                         let ai_presets = [
-                            (1, 0, "1+0 Bullet"),
                             (3, 0, "3+0 Blitz"),
                             (5, 3, "5+3 Blitz"),
                             (10, 0, "10+0 Rápida"),
